@@ -1,0 +1,35 @@
+/* These are the styles for the construction page. */
+body {
+  background: linear-gradient(to right, var(--other-color) 25%, var(--secondary-color) 75%);
+  color: white;
+  display: flex;
+}
+
+.info {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 80%;
+  height: 80px;
+}
+
+.image {
+  flex-basis: 50%;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
