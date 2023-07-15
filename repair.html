@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/1.css">
+    <link rel="stylesheet" href="../css/repair.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/1.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>How to Fix? | Refer for Reuse</title>
+  </head>
+  <body>
+    <header>
+        <div class="wrapper row">
+          <button class="nav-toggle">
+            <span class="icon-area"></span>
+          </button>
+          <a class="logo" href="../html/home.html"><img src="../image/removelogo-removebg-preview.png" style="width: 130PX; padding-left: 20PX;float: left; padding-left: 20PX;"></a>
+          <nav class="nav">
+            <ul>    
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/repair.html">Restoration</a></li>
+              <li><a href="../html/product.html">Product</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact us</a></li>&nbsp;&nbsp;
+                 <li> <a href="../html/signup.html"><i class="fa fa-user-circle" style="font-size:36px; color: white;"></i></a></li>
+            </ul>            
+          </nav>
+        </div>
+      </header> 
+<h1>Our Process</h1>
+<center>_______________________________________________________</center>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">STEP:1</div></li>
+		<li class="step step02"><div class="step-inner">STEP:2</div></li>
+		<li class="step step03"><div class="step-inner">STEP:3</div></li>
+		<li class="step step04"><div class="step-inner">STEP:4</div></li>
+		<li class="step step05"><div class="step-inner">STEP:5</div></li>
+	</ul>
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>ASSESSMENT</h2>
+        <img src="../image/step-1.jpg"><br><br><br><br>
+		<p>Make a thorough inspection of the watch to ascertain its general health and spot any obvious defects.
+Make a note of the watch's make, model, and year of production because these details will be useful when it comes time to restore it.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>DISASSEMBLY</h2>
+        <img src="../image/step-2.jpg"><br><br><br><br>
+		<p>First, take off the watch's strap or bracelet, if any.
+			Using the proper tools, carefully remove the movement from the case by opening the case back.
+			Before continuing with the disassembly, take pictures or make notes to remember the initial placement of each component.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>CLEANING</h2>
+        <img src="../image/step-3.jpg"><br><br><br><br>
+		<p>To get rid of grime, oil, and outdated lubricants, clean each component individually using specialised watch cleaning solutions.
+			Depending on the type of watch parts, use ultrasonic cleaners or manual cleaning methods.
+			Use appropriate tools to handle the delicate components with care, and refrain from applying excessive force.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>INSPECTION AND REPAIR</h2>
+        <img src="../image/step-4.jpg"><br><br><br><br>
+		<p>Check each component for signs of wear, corrosion, or damage.
+			Any worn or damaged parts, such as rusted springs, broken jewels, or worn-out gears, should be replaced.
+			Attend to any mechanical problems, such as inaccurate timekeeping, erratic winding, or a broken date complication.
+			If necessary, polish or refinish the case and other external components.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>LUBRICATION</h2>
+        <img src="../image/step-5.jpg"><br><br><br><br><br>
+		<p>To ensure smooth operation, lubricate the movement components as necessary.
+			Use the appropriate amounts and locations of premium synthetic watch oils and greases.
+			Avoid overlubricating because it can attract dust and lead to issues.</p>
+	</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+    </script>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01"><div class="step-inner">STEP:6</div></li>
+		<li class="step step02"><div class="step-inner">STEP:7</div></li>
+		<li class="step step03"><div class="step-inner">STEP:8</div></li>
+		<li class="step step04"><div class="step-inner">STEP:9</div></li>
+		<li class="step step05"><div class="step-inner">STEP:10</div></li>
+	</ul>
+		<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>REASSEMBLY</h2>
+        <img src="../image/step-6.jpg"><br><br><br><br>
+		<p>Start putting the watch back together by cautiously returning each component to its original location.
+			To ensure proper assembly, refer to the notes or reference photos taken during disassembly.
+			Verify that each component fits snugly and functions easily.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>REGULATION AND TESTING</h2>
+        <img src="../image/step-7.jpg"><br><br><br><br><br>
+		<p>To ensure precise timekeeping, adjust the watch's movement.
+			Control the balance wheel's settings to ensure accurate oscillation.
+			To ensure the watch's dependability and accuracy, test it in various settings and circumstances.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>REFINISHING AND RESTORATION:</h2>
+        <img src="../image/step-8.jpg"><br><br><br><br>
+        <p>Polish the case, crystal, and other external parts to bring them back to their former luster.
+			If the crystal is scratched or broken, replace it.
+			If the dial or hands are beginning to show signs of wear, think about having them refinished, but only if absolutely necessary and after consulting a professional to protect the watch's value.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>FINAL INSPECTION</h2>
+        <img src="../image/step-9.jpg"><br><br><br><br><br><br>
+		<p>Check the watch carefully for any remaining flaws or problems.
+			Make sure that every part is correctly fastened and positioned.
+			Check the watch's operation, making sure it can wind, set the time, and operate any complications.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>REASSEMBLY AND FINAL TOUCHES</h2>
+        <img src="../image/step-10.jpg"><br><br><br><br><br>
+		<p>Reassemble the watch completely as soon as you are happy with the restoration.
+			Refasten the bracelet or strap by making sure it is firmly fastened.
+			Clean the watch's exterior to get rid of any dirt or fingerprints.</p>
+	</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script> <br> <br>
+            <!-- footer started  -->
+            <footer>
+                <div class="container">
+                    <div class="footer-1 line" data-aos="fade-right" data-aos-duration="1050">
+                        <h2>About Us</h2>
+                        <p>Customer satisfaction is our utmost priority at Vintage Watches</p>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-2 line" data-aos="fade-right" data-aos-duration="1030">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="../html/about.html">About</a></li>
+                            <li><a href="../html/repair.html">Restoration</a></li>
+                            <li><a href="../html/product.html">Product</a></li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-2 line" data-aos="fade-right" data-aos-duration="1010">
+                        <h2>Product Links</h2>
+                        <ul>
+                            <li><a href="../html/product.html #men's">Men's</a></li>
+                            <li><a href="../html/product.html #women's">Women's</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-3 line" data-aos="fade-right" data-aos-duration="990">
+                        <h2>Contact Info</h2>
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>132, New East Lane <br>London, United Kindom</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>
+                            <span><a href="#">+1 2234 56789</a></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span><a href="#">contactus@email.com</a></span>
+                        </li>
+                    </div>
+                </div>
+            </footer>
+                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <script>
+                  AOS.init();
+                </script>
+              <!-- end footer  -->
+                               <!-- copyright start  -->
+<div class="copyright">
+<p>Copyright &copy; 2023.  All Right Reserved.</p>
+</div>
+              <!-- end copyright  -->
+  </body>
+</html> 
